@@ -3,6 +3,7 @@ $(document).ready(function(){
         var pledge = parseInt(value.newValue);
         $('#oldValue').text('$' + pledge);
         $('#pledge-new').text('$' + ((pledge * 1.029) + 0.35).toFixed(2));
+        $('#pledge-new-total').text('$' + ((pledge - 0.35)/1.029).toFixed(2));
         $('#creator-old-7').text('$' + (pledge * 0.88).toFixed(2));
         $('#creator-old-15').text('$' + (pledge * 0.80).toFixed(2));
         $('#creator-new').text('$' + (pledge * 0.95).toFixed(2));
